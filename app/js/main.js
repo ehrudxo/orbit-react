@@ -4,12 +4,14 @@ import ReactDOM from 'react-dom';
 import career from './contents/career';
 import ReactCSSTransitionGroup from'react-addons-css-transition-group';
 
+const markup = function(doc) { return {__html: doc}; };
 class Experiences extends React.Component{
   render(){
+    let inStyle = {marginBottom:"30px"}
     var experiences = [];
     this.props.experiences.map(({jobTitle,during,company,detail},id)=>{
       experiences.push(
-        <div className="item" key={id}>
+        <div className="item" key={id} style={inStyle}>
             <div className="meta">
                 <div className="upper-row">
                     <h3 className="job-title">{jobTitle}</h3>
@@ -18,7 +20,7 @@ class Experiences extends React.Component{
                 <div className="company">{company}</div>
             </div>
             <div className="details">
-              {detail}
+              <div dangerouslySetInnerHTML={markup(detail)}/>
             </div>
             <p/><p/>
         </div>
