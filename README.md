@@ -162,6 +162,12 @@ That's all
 * [hjson](https://github.com/laktak/hjson-js) webpack loader
 * [react-animation](https://facebook.github.io/react/docs/animation.html)
 
-##License
+## React Code License
 
 MIT License
+
+## Bootstrap template License
+
+This Bootstrap template is made by UX/UI designer [Xiaoying Riley](https://twitter.com/3rdwave_themes) for developers and is 100% FREE under the [Creative Commons Attribution 3.0 License (CC BY 3.0)](http://creativecommons.org/licenses/by/3.0/)
+
+If you'd like to **use the template without the attribution**, you can check out **other license options** via the [theme website](http://themes.3rdwavemedia.com/website-templates/orbit-free-resume-cv-template-for-developers/)
