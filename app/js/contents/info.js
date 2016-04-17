@@ -8,7 +8,7 @@ const userinfo={
     linkedin : "linkedin.com/in/alandoe",
     github : "github.com/username",
     twitter : "@twittername",
-    imgUrl : "http://www.shikadi.net/wiki/keen/images/thumb/1/16/KeenUpClose.png/300px-KeenUpClose.png"
+    imgUrl : "https://i.imgur.com/0DeVvcc.png"
   },
   educations : [{
      major : "MSc in Computer Science",
