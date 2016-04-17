@@ -1,2 +1,0 @@
-require("./info");
-require("./main");
