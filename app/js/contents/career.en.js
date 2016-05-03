@@ -1,4 +1,4 @@
-let profileText = "• Front-End Specialist - Software Engineer\n"
+let profileText = "• Front-End 전문가 \n"
               + "Specialized in Javascript (React, Angular, jQuery, node.js, Openlayers) and modern web architecture.\n"
               + "As a lead developer in Agile Transformation,"
               + " I have built enterprise git repository and made developers to use that in github way.\n\n"
@@ -8,7 +8,7 @@ let profileText = "• Front-End Specialist - Software Engineer\n"
               + " Lead the Bluehack hackathon at Samsung from 2015 with SEC.\n\n"
               + "• OpenSource Developer\n"
               + "- OSGeo member since 2009.\n"
-              + "- FOSS4G 2015 commitee.(http://2015.foss4g.org/about/committees/)\n "
+              + "- FOSS4G 2015 commitee.(http://2015.foss4g.org/about/committees/)\n"
               + "- Map service devel in various languages(Node.js, GoLang)";
 
 const career={

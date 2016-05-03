@@ -1,9 +1,36 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import career from './contents/career';
+//import career from './contents/career';
+require('es6-promise').polyfill();
+import fetch from 'isomorphic-fetch';
+import Hjson from 'hjson';
 import ReactCSSTransitionGroup from'react-addons-css-transition-group';
-
+fetch('./js/contents/career.hjson')
+  .then(function(response) {
+    if (response.status >= 400) {
+        throw new Error("Bad response from server");
+    }
+    return response.text();
+  })
+  .then(function(resText){
+    console.log(resText);
+    let career = Hjson.parse(resText);
+    console.log(career);
+    ReactDOM.render(
+      <div>
+        <Career profile={career.profile}/>
+        <Experiences experiences={career.experiences}/>
+        <Failures faliures={career.faliures}/>
+        <Project project={career.project} projectType="Projects" icon="code"/>
+        <Project project={career.opensource} projectType="Open Sources" icon="github"/>
+        <Skill skills={career.skills}/>
+      </div>
+      ,
+      document.getElementById('main')
+    );
+  })
+const c_style = {whiteSpace:"pre-wrap"};
 const markup = function(doc) { return {__html: doc}; };
 class Experiences extends React.Component{
   render(){
@@ -20,7 +47,7 @@ class Experiences extends React.Component{
                 <div className="company">{company}</div>
             </div>
             <div className="details">
-              <div dangerouslySetInnerHTML={markup(detail)}/>
+              <div style={c_style}><div dangerouslySetInnerHTML={markup(detail)}/></div>
             </div>
             <p/><p/>
         </div>
@@ -34,14 +61,47 @@ class Experiences extends React.Component{
     );
   }
 }
+class Failures extends React.Component{
+  render(){
+    let inStyle = {marginBottom:"30px"}
+    var experiences = [];
+    this.props.faliures.list.map(({title,url,role,during,detail,company},id)=>{
+      experiences.push(
+        <div className="item" key={id} style={inStyle}>
+            <div className="meta">
+                <div className="upper-row">
+                    <h3 className="job-title">{title}</h3>
+                    <div className="time">{during}</div>
+                </div>
+                <div className="company">{company}</div>
+            </div>
+            <div className="details">
+              <div className="url"><a href={url} target="_">{url}</a></div>
+              <div style={c_style}><div dangerouslySetInnerHTML={markup(detail)}/></div>
+            </div>
+            <p/><p/>
+        </div>
+      );
+    });
+    return(
+      <section className="section summary-section">
+        <h2 className="section-title"><i className="fa fa-code-fork"></i>Failures</h2>
+        <div className="intro">
+          <div style={c_style}><div dangerouslySetInnerHTML={markup(this.props.faliures.description)}/></div>
+        </div>
+        <p/>
+        {experiences}
+      </section>
+    );
+  }
+}
 class Career extends React.Component{
   render(){
-    let c_style = {whiteSpace:"pre-wrap"};
     return(
       <section className="section summary-section">
           <h2 className="section-title"><i className="fa fa-user"></i>Career Profile</h2>
           <div className="summary">
-              <div style={c_style}>{this.props.profile}</div>
+              <div style={c_style}><div dangerouslySetInnerHTML={markup(this.props.profile)}/></div>
           </div>
       </section>
     );
@@ -49,6 +109,7 @@ class Career extends React.Component{
 }
 class Project extends React.Component{
   render(){
+    var iconClassName="fa fa-"+this.props.icon;
     var projectType=this.props.projectType;
     var items=[];
     this.props.project.list.map(({title,url,role,during,detail},i)=>{
@@ -61,9 +122,9 @@ class Project extends React.Component{
     });
     return(
       <section className="section projects-section">
-          <h2 className="section-title"><i className="fa fa-archive"></i>{this.props.projectType}</h2>
+          <h2 className="section-title"><i className={iconClassName}></i>{this.props.projectType}</h2>
           <div className="intro">
-              <p>{this.props.project.description}</p>
+            <div style={c_style}><div dangerouslySetInnerHTML={markup(this.props.project.description)}/></div>
           </div>
           {items}
       </section>
@@ -107,14 +168,3 @@ class Skill extends React.Component{
     );
   }
 }
-ReactDOM.render(
-  <div>
-    <Career profile={career.profile}/>
-    <Experiences experiences={career.experiences}/>
-    <Project project={career.project} projectType="Project"/>
-    <Project project={career.opensource} projectType="Open Source"/>
-    <Skill skills={career.skills}/>
-  </div>
-  ,
-  document.getElementById('main')
-);

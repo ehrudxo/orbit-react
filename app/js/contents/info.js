@@ -1,25 +1,25 @@
 const userinfo={
   profile:{
-    name : "Commander Keen",
+    name : "KT Doh",
     tag : "Full stack Engineer",
-    mail : "alan.doe@website.com",
-    phone : "0123 456 789",
-    blog : "portfoliosite.com",
-    linkedin : "linkedin.com/in/alandoe",
-    github : "github.com/username",
-    twitter : "@twittername",
-    imgUrl : "https://i.imgur.com/0DeVvcc.png"
+    mail : "ehruxo@gmail.com",
+    phone : "82)10-4517-8518",
+    blog : "techstory.shma.so",
+    linkedin : "kr.linkedin.com/in/zkeen",
+    github : "github.com/ehrudxo",
+    twitter : "@iam_keen",
+    imgUrl : "https://media.licdn.com/media/AAEAAQAAAAAAAAW4AAAAJDkyNWVmNzYwLTE2NTQtNDYwZS1hN2JkLTRhY2NkOWRlNDU1YQ.jpg"
   },
   educations : [{
-     major : "MSc in Computer Science",
-     school : "University of London" ,
-     during : "2011-2012"
+     major : "BSc-Computer Engineering",
+     school : "SungKyunKwan University" ,
+     during : "1996-2004"
   },{
-     major : "BSc in Applied Mathematics",
-     school : "Bristol University" ,
-     during : "2007-2011"
+     major : "English Course",
+     school : "SGLP" ,
+     during : "2014"
   }],
-  languages : [{lang:"English",fluency:"Native"},{lang:"Spanish",fluency:"Professional"},{lang:"French",fluency:"Professional"}],
-  interests :["Github Trend","Climbing","Tech Blogging"]
+  languages : [{lang:"Korean",fluency:"native"},{lang:"english",fluency:"Intermediate High - OPic"}],
+  interests :["Github Trend","Social Programming","Tech Blogging"]
 }
 module.exports= userinfo;
