@@ -5,23 +5,21 @@
   profile :
   '''
   <b>Front-End Specialist</b>
-  Specialized in Modern Web Architecture(React, Angular, jQuery, node.js, Openlayers, mobile web ) and native mobile platform.
-  And as a lead developer in Agile Transformation, I have built enterprise git repository and made developers to use that in github way.
-  Project 'Clairvoyant(source code recommendation project. It was just ended as a trial)' is I am still attached.
-
-  <b>Thought Leader</b>
-  Commitee memeber of the Samsung Bluehack hackathon at Samsung from 2015 with SEC.
-  Taking the lead of 'OpenIt' Developer Conference at SamsungSDS that has led creative movement inside company from 2011.
+  Specialized in Modern Web Architecture and native mobile platform.
+  - React, Angular, jQuery, node.js, Openlayers, mobile web.
 
   <b>Visionary</b>
-  Before no one has concept of git repository in company, I built enterprise cloud git repository - gitnsam.
-  Furthermore, I enhanced it cloud dev environment with cloud9 and design source code recommendation system.
-  Now I am with ACT Team - Agile Core Team, try to expand agile innovation.
+  Built enterprise cloud git repository(Gitnsam) and enhanced it to the cloud dev environment with Cloud9 and designed Clairvoyant - the source code recommendation system.
+  A PM role in ACT Team - Agile Core Team, innovate the company in agile way.
+
+  <b>Thought Leader</b>
+  A member of the Samsung Bluehack hackathon Committee since 2015.
+  Taking the lead of 'OpenIt' Developer Conference at SamsungSDS which has led the creative movement in the company since 2011.
 
   <b>OpenSource Developer</b>
   - As a OSGeo member since 2009, I have built various types of map services
-  - FOSS4G 2015 commitee.(http://2015.foss4g.org/about/committees/)
-  '''
+  - FOSS4G 2015 commitee.( <a href="http://2015.foss4g.org/about/committees/" target="_">http://2015.foss4g.org/about/committees/</a> )
+  ''',
   experiences : [{
      jobTitle : "PM - Agile Core Team",
      during : "2015 - Present" ,
@@ -29,8 +27,8 @@
      detail :
      '''
      Agile Core Team has 3 significant good part of the development. Pair work, TDD, Whole Team.
-     The main role of PM is user validation and making great user story that developers can code.
-     As a PM, successfully lead team to make a great quality product. I always focus on user satisfaction.
+     The main role of PM is to carry out user validation and to make a great user story that developers can code.
+     As a PM, successfully lead team to deliver a great quality product always in users' satisfaction perspective.
      ''',
      location :"Seoul,Korea"
   },{
@@ -38,21 +36,116 @@
      during : "2013 - 2015" ,
      company : "Samsung SDS, Seoul",
      detail :
-     "Built Enterprise git repository(Gitnsam), developer community site. Gitnsam made a big change the way of development. I gathered reusable software component and refined it to be a better quality product. Ratio of reusing software has risen to 30%. It's like a Github in Company.",
+     "Built Gitnsam and developer community site. Gitnsam made a big change in the way of development. I gathered reusable software component and refined it to build a better quality product. Ratio of reusing software has risen up to 30%. It's like a Github in Company.",
      location :"Seoul,Korea"
   },{
      jobTitle : "Lead developer - Government IT service delivery",
      during : "2009 - 2013" ,
      company : "Samsung SDS, Seoul",
-     detail :"Successfully lead project to accomplish user requirements, satisfying customers and users who use program that team built. In the project, I developed lots of domain, lots of product in web and mobile",
+     detail :"Successfully led project to build user friendly program by fulfilling user requirements in terms of customer satisfaction. In the project, I developed lots of domain, lots of product in web and mobile",
      location :"Seoul,Korea"
   },{
      jobTitle : "GIS Software Engineer - Local Government IT service delivery",
      during : "2004 - 2009" ,
      company : "Samsung SDS, Seoul",
-     detail :"Successfully finished the project that I was in role. I am in charge of Web Map, Mobile Map API(javascript, android, iOS)",
+     detail :"In charge of Web Map, Mobile Map API(javascript, android, iOS)",
      location :"Seoul,Korea"
   }],
+  faliures :{
+    description :
+    '''
+    It would be great if I hear that these failures I have experienced become the reason you want to work with me.
+    - Development environment trial : Gitnsam -> Cloud dev platform -> clairvoyant -> prophet
+    - Open source trial : NodeMap -> HTML5 web map -> GoMap
+
+
+    ''',
+    list : [{
+      title : "prophet",
+      during :"2014-2015",
+      role : "Lead developer",
+      company : "SamsungSDS",
+      detail :
+      '''
+      Second source code recommendation project that I was participated in.
+      In this project, I used 'tag' for searching and I forced colleagues to fill the tag for their projects.
+      After completing markdown page , 'prophet' analyze markdown and find some keyword for recommendation.
+      It would have been successful if it had been limited to relative domains and if there had been more data for this project.
+      If there is another chance, I would like to take 3rd challenge.
+      ''',
+      location :"Seoul,Korea"
+    },{
+      title : "clairvoyant",
+      during :"2014",
+      role : "dev,software engineer",
+      company : "SamsungSDS",
+      detail :
+      '''
+      Source code recommendation project where I designed architecture as a PM.
+      There were 3 modules as a big picture
+      1st - the mailing and feedback channel(Node.js Mailer)
+      2nd - the copy detection program(From PMD sub module)
+      3rd - the source graph(Neo4j and code analysis)
+      The project was stopped because of difficulties of the 3rd modules.
+      ''',
+      location :"Seoul,Korea"
+    },{
+      title : "Cloud dev platform",
+      during :"2013-2014",
+      role : "Lead developer,PM",
+      company : "SamsungSDS",
+      detail :
+      '''
+      After successfully launching Gitnsam( 2000+ developers are using it in Company. It is up to 40%).
+      I wanted to make a further steps in the development. Project as there have been only silo projects everywhere.
+      I designed cloud development environment.
+      Cloud9 for WebIDE, Gitnsam as git repository, Jenkins as build tool.
+      It became the original concept of ALM project architecture in the company.
+      ''',
+      location :"Seoul,Korea"
+    },{
+      title : "Go Map",
+      url : "https://github.com/ehrudxo/GoMap",
+      during :"2015",
+      role : "Opensource Developer",
+      company : "OSGeo",
+      detail :
+      '''
+      After building NodeMap, I have made a decision to change nodeMap to GoMap as I heard that GoLang is suitable for rapid web server.
+      There was no change for common Architecture at all. It really worked great.
+      GORM(ORM), revel (Web framework), POSTGIS, draw2dkit(image Tool using imagemagik) is main library for this project.
+      At FOSS4G Korea( <a href="http://2015.foss4g.org/" target="_">http://2015.foss4g.org</a> ), I made presentation for this.
+      It was very useful to me understanding Go syntax.
+      ''',
+      location :"Seoul,Korea"
+    },{
+      title : "Node Map",
+      url : "https://github.com/ehrudxo/nodeMap",
+      during :"2012",
+      role : "Opensource Developer",
+      company : "OSGeo",
+      detail :
+      '''
+      As a member of OSGeo, I built GIS map server written in Javascript running on Node.js.
+      This project is based on PostGIS(Postgre GIS add on), node-canvas and express.
+      I made a paper for it ( <a href="http://www.papersearch.net/view/detail.asp?detail_key=2p300324" target="_">http://www.papersearch.net/view/detail.asp?detail_key=2p300324</a> )
+      It was great Architecture at that time and there were many good feedbacks during my presentation. But few developer could handle Node.js and javascript in the advanced ways at that time, it did not grow bigger and wider.
+      ''',
+      location :"Seoul,Korea"
+    },{
+      title : "HTML5 Web map",
+      role : "dev,software engineer",
+      during :"2011 - 2012",
+      company : "OSGeo",
+      detail :
+      '''
+      I would like to build web map that use HTML5 canvas. Not using jQuery, openlayers.
+      It has vector layers, image layers. I thought it would be the alternatives for Openlayers.
+      But it turned out failure because it's too early and not ready for developers and browsers. SVG was just enough for developres and only FireFox was ready for the new spec.
+      ''',
+      location :""
+    }]
+  },
   project :{
     description :"Don’t worry if it doesn’t work right. If everything did, you’d be out of a job - Mosher’s Law",
     list : [{
@@ -62,12 +155,12 @@
       detail :
       '''
       Enterprise FIDO(Fast Identity Online) is the representative solution of SamsungSDS.
-      In this project, we built desktop login and SSO solution using FIDO mobile and other devices.
-      I am in charge of managing product. (PM)
+      In this project, Built desktop authentication and SSO solution using mobile phone or other devices(like mouse) with FIDO.
+      I am in charge of managing product which will increase sales toward banks and TM solutions.
       This project is under Agile Practice, especially Pair Programming, TDD, Whole Team.
       As a PM, I wrote user story and got a validation from users.
-      Lots of languages and technologies were needed like iOS, android, web, Windows Credential Provider and etc.
-      I also has a role as a tech lead.  As a tech lead, I designed whole architecture of project like using pGina as a Credential Provider.
+      Lots of languages and technologies were needed - iOS, android, web, Windows Credential Provider and etc.
+      I also had a role as a tech lead.  As a tech lead, I designed whole architecture of this project and specific domain of development. (eg,I decided to use pGina as a Credential Provider.)
       ''',
       location :""
     },{
@@ -88,9 +181,9 @@
       detail :
       '''
       Using Gitlab, I built Cloud Repository(Gitnsam).
-      After that made relation with Cloud9, Jenkins and aoutomation scripts that I made.
+      After that made relation with Cloud9, Jenkins and automation scripts that I made.
       I built cloud dev environment.
-      이런 일련의 일을 하기 위해 애자일 팀인 팀 레고를 조직했고 이 성과로 회사로 부터 CEO특별 상을 수상했다.
+      In order to achieve this goal, I organized agile team(Team LEGO.) and by these efforts TeamLEGO won the prize from CEO(2014).
       ''',
       location :"Seoul,Korea"
     },{
@@ -100,43 +193,45 @@
       role : "dev,software engineer",
       detail :
       '''
-      It's a medicare system in Korea.
-      Korean medicare system level is excellent and all hospital and drug store uses this system online.
-      If there is a problem online, hospital and drug store uses paper and submit via fax.
-      I was in charge of this offline situation. My main role is customer to use it more conveniently and safely.
-      I omitted unnecessary record of paper for customer to input this sheet.
-      Second role is batch program that is written in C++.
+      It's like a medicare system in Korea.
+      Korean medicare system is high standard and all hospitals and drug stores use this system as online.
+      If there is a problem online, hospital and drug store should run paper administration via fax.
+      I was in charge of solving this offline situation.
+      My main role was to support customers with convenient and safe product (program) that contributed to reduce 20% of unnecessary record of the paper for the customers. And my second role was to batch program that was written in C++.
       ''',
       location :"Seoul,Korea"
     },{
       title : "Government IT service delivery",
       url : "http://www.gmap.go.kr/",
-      during :"2013-2015",
+      during :"2009-2012",
       role : "Lead developer",
-      detail :"
-      Korean E-Government system is well known as a excellent case of Government IT Service.
-      Sido-Saeol System-Administration system of Local Government-is main component of that.
-      In this project, I was in charge of building web and mobile application using Sido-Saeol System's address.
-      It's called Geocoding and reverse. System was very complex because administration system is connected to law and
-      our scope of project is include analysis.
-      After finishing this project, customer was satisfied and this project give convenience to the customers in many parts,
-      UN gives prize to this project and I became the winner of prize from Administration minister.
+      detail :
+      '''
+      Korean E-Government system is well known as an excellent case of Government IT Service.
+      Sido-Saeol System-Administration system of Local Government- is main component of that.
+      In this project, I was in charge of building web and mobile map application using Sido-Saeol System's address.(It's called Geocoding and reverse. )
+      The system was very complex with huge amount of data and administration system was connected to the nation law. Our scope of project includes analysis of this system.
+      More than 75% of administration system has changed in this way.
+      After finishing this project, the customer was satisfied. As this project give convenience to the customers in many ways,
+      UN awarded a prize to the project team and I became the winner of the prize from Administration minister.
+
       Representative Mobile App is shown below.
-      iOS : https://itunes.apple.com/kr/app/saenghwalbulpyeonseumateuponsingo/id477911901?mt=8
-      Android : https://play.google.com/store/apps/details?id=egovframework.tcpotal.mobile.lur&hl=ko
-      I was in role as a map API developer at this app.
-      ",
+      iOS : <a href="https://itunes.apple.com/kr/app/saenghwalbulpyeonseumateuponsingo/id477911901?mt=8" target="_">생활공감지도</a>
+      Android : <a href="https://play.google.com/store/apps/details?id=egovframework.tcpotal.mobile.lur&hl=ko" target="_">생활공감지도</a>
+      I was in role as a map API developer in these apps.
+      - More than a hundred of Seoul citizens downloaded this app.
+      ''',
       location :"Seoul,Korea"
     },{
       title : "Government IT service delivery",
       url : "#",
-      during :"2013-2015",
+      during :"2004-2009",
       role : "Lead developer,PM",
       detail :
       '''
       Osan, Hwasung, Paju city is small city near Seoul.
       I was in projects of these cities' GIS system.
-      Applet, Web Map and ArchGIS, Oracle is main Architecure of there projects.
+      Applet, Web Map and ArcGIS, Oracle is main Architecure of there projects and I was in charge of web and mobile application
       ''',
       location :["Osan","Hwa-Sung","Paju"]
     }]
@@ -144,16 +239,33 @@
   opensource :{
     description :"Talk is cheap. Show me the code - Linus Torvalds",
     list : [{
+      title : "I.Feedback.U",
+      url : "#",
+      during :"2015-present",
+      role : "dev,software engineer",
+      detail :
+      '''
+      This awful title "I.Feedback.U" is came from Gov. slogan. I.Seoul.U.(kind of word play)
+      Forget about it's name.
+      ACT(Agile Core Team) follows agile practice in advanced way.
+      So I made my mind up to build peer reflection app in my team and want to make it an open source.
+      It's the fist project that is strategically planned as an open source entitling our company.
+      I suggested changing process of this for developers during following process.
+      play store : <a href="https://play.google.com/store/apps/details?id=com.sds.act.ifeedbacku" target="_">ifeedbacku</a>
+      server github : <a href="https://github.com/SDSACT/ifu_server" target="_">https://github.com/SDSACT/ifu_server</a>
+      client github : <a href="https://github.com/SDSACT/ifu_client" target="_">https://github.com/SDSACT/ifu_client</a>
+      ''',
+      location :"Seoul,Korea"
+    },{
       title : "OSGeo",
       url : "#",
       role : "dev,software engineer",
       during :"2009 - present",
       detail :
       '''
-        OSGeo member since 2009 and made nodeMap as an open source.
-          - Invited as a speaker at Japan's 2012 OSGeo Conference because of nodeMap.
-          - (http://old.osgeo.jp/%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/foss4g2012osaka/foss4g2012osakaprogram/)
-          - FOSS4G Korea commitee member
+      OSGeo member since 2009 and made nodeMap and GoMap as an open source.
+        - Invited as a speaker at Japan's 2012 OSGeo Conference because of nodeMap.
+        - FOSS4G Korea commitee member
       ''',
       location :""
     },{
@@ -163,141 +275,28 @@
       role : "Lead developer",
       detail :
       '''
-      사내에 Front End 전문가는 없는데 (대부분 Java개발자) 외부 환경은 지속적으로 변화해 가는 과정이라서 연구회를 제안함
-      100명 정도의 연구회를 진행하고 Javascript를 교육하고 내부 개발자를 수급함.
-      교육 내용은 지속적으로 Open Source 화함(github)
-      최근 React관련 소스나 스터디자료는 남아 있음.
+      International development environment changes every day(especially Front-end), but there was none of Front-end specialist in company.
+      I made Front-End Study study group and it was up to about 100 members.
+      Recent React Study remains in Github as Educational tutorials were uploaded to github.
       ''',
       location :"2009 - present"
-    },{
-      title : "I.Feedback.U",
-      url : "#",
-      during :"2015-present",
-      role : "dev,software engineer",
-      detail :
-      '''
-      회사의 제품을 오픈 소스화 하고 싶었고 그런 프로젝트를 진행하고 싶었음.
-      그래서 Agile Core Team에서 프로젝트에 투입되기 전에 토이 프로젝트를 peer review 프로그램을 만들고
-      사내 최초로 오픈 소스화 진행.
-      Pivotal에서 교육을 받고 온 친구들과 협업해 프로젝트 체계를 만들고 거기에 따라 프로세스를 만들고 개발함.
-      오픈소스화 하는 내부 프로세스가 없어서 프로세스를 제안했고 받아 들여짐. 법무팀과도 협의
-      ''',
-      location :"Seoul,Korea"
-    }]
-  },
-  faliures :{
-    description :
-    '''
-    It would be nice to hear that these failures I tried became the reason you wanted to work with me.
-    - Development environment trial : Gitnsam -> Cloud dev platform -> clairvoyant -> prophet
-    - Open source trial : NodeMap -> GoMap
-
-
-    ''',
-    list : [{
-      title : "prophet",
-      during :"2009-2012",
-      role : "Lead developer",
-      company : "SamsungSDS",
-      detail :
-      '''
-      Second project that I tried about source code recommendation.
-      In this project, I used 'tag' for searching. Forcing people to fill the tag for project.
-      After completing markdown page and if it's pushed to the Gitnsam, 'prophet' analyze mark down and find some key word for recommendation.
-      It was successful if it is limited in relative domains.
-      More data and project is necessary for this project.
-      If it is possible, I would like to make 3rd challenge.
-      ''',
-      location :"Seoul,Korea"
-    },{
-      title : "clairvoyant",
-      during :"2012-2013",
-      role : "dev,software engineer",
-      company : "SamsungSDS",
-      detail :
-      '''
-      Source code recommendation project that I suggested and roled as PM.
-      There are 3 modules as a big picture
-      1st - the mailing and feedback channel(Node.js Mailer)
-      2nd - the copy detection program(From PMD sub module)
-      3rd - the source graph(Neo4j and code analysis)
-      It was failed because of difficulties of 3rd modules.
-      ''',
-      location :"Seoul,Korea"
-    },{
-      title : "Cloud dev platform",
-      during :"2013-2015",
-      role : "Lead developer,PM",
-      company : "SamsungSDS",
-      detail :
-      '''
-      After successfully launching Gitnsam( 2000+ developers are using it in Company. ) I would like to make a better way of development.
-      I designed cloud development environment.
-      Cloud9 for WebIDE, Gitnsam as git repository, Jenkins as build tool.
-      It became the original concept design of ALM project in company.
-      ''',
-      location :"Seoul,Korea"
-    },{
-      title : "Go Map",
-      url : "https://github.com/ehrudxo/GoMap",
-      during :"2015",
-      role : "Opensource Developer",
-      company : "OSGeo",
-      detail :
-      '''
-      After building NodeMap, I heard that GoLang is suitable for rapid web server.
-      So I made my mind up to change nodeMap to GoMap.
-      Common Architecture did not changed at all. It really works great.
-      GORM(ORM), revel (Web framework), POSTGIS, draw2dkit(image Tool using imagemagik) is main library for this project.
-      At FOSS4G Korea(http://2015.foss4g.org/), I made presentation for this.
-      It was very useful to me understanding go syntax.
-      ''',
-      location :"Seoul,Korea"
-    },{
-      title : "Node Map",
-      url : "https://github.com/ehrudxo/nodeMap",
-      during :"2010-2011",
-      role : "Opensource Developer",
-      company : "OSGeo",
-      detail :
-      '''
-      As a member of OSGeo, I built GIS map server written in Javascript running on Node.js.
-      This project is based on PostGIS(Postgre GIS add on), node-canvas and express.
-      (url : https://github.com/ehrudxo/nodeMap)
-      I made a paper for it ( http://www.papersearch.net/view/detail.asp?detail_key=2p300324 )
-      Architecture was great at that time, there were many good feedback during presentation session.
-      But few developer could handle Node.js and javascript in advanced ways at that time, it did not grow bigger and wider.
-      ''',
-      location :"Seoul,Korea"
-    },{
-      title : "HTML5 Web map",
-      role : "dev,software engineer",
-      during :"2010 - 2011",
-      company : "OSGeo",
-      detail :
-      '''
-      I would like to build web map that use HTML5 canvas. Not using jQuery, openlayers.
-      It has vector layers, image layers. I think it would be the alternatives for Openlayers.
-      But it turned out failure. It's too early for developers. SVG was just enough for developres.
-      ''',
-      location :""
     }]
   },
   skills : [{
     skill : "Leadership",
-    level : "98%"
-  },{
-    skill : "Communication",
-    level : "98%"
-  },{
-    skill : "Javascript",
-    level : "108%"
-  },{
-    skill : "Node.js",
     level : "90%"
   },{
+    skill : "Communication",
+    level : "90%"
+  },{
+    skill : "Javascript",
+    level : "95%"
+  },{
+    skill : "Node.js",
+    level : "80%"
+  },{
     skill : "java",
-    level :"80%"
+    level :"75%"
   },{
     skill : "PHP",
     level :"60%"

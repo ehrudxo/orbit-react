@@ -64,9 +64,9 @@ class Experiences extends React.Component{
 class Failures extends React.Component{
   render(){
     let inStyle = {marginBottom:"30px"}
-    var experiences = [];
+    var faliures = [];
     this.props.faliures.list.map(({title,url,role,during,detail,company},id)=>{
-      experiences.push(
+      faliures.push(
         <div className="item" key={id} style={inStyle}>
             <div className="meta">
                 <div className="upper-row">
@@ -90,7 +90,7 @@ class Failures extends React.Component{
           <div style={c_style}><div dangerouslySetInnerHTML={markup(this.props.faliures.description)}/></div>
         </div>
         <p/>
-        {experiences}
+        {faliures}
       </section>
     );
   }
@@ -115,8 +115,11 @@ class Project extends React.Component{
     this.props.project.list.map(({title,url,role,during,detail},i)=>{
       items.push(
         <div className="item" key={i}>
-            <span className="project-title"><a href="{url}" target="_blank">{title}</a></span> -
-            <span className="project-tagline">{detail} ( {during} as a {role}) </span>
+            <span className="project-title"><a href="{url}" target="_blank">{title}</a></span>
+            <span className="project-tagline">( {during} as a {role} ) </span>
+            <p/>
+            <div style={c_style}><div dangerouslySetInnerHTML={markup(detail)}/></div>
+            <p/>
         </div>
       );
     });
